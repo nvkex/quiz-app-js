@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Corona Virus Quiz</title>
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 <body>
 
     <!-- Top Section-->
@@ -13,6 +18,13 @@
             <h2 class = "display-3 my-4 text-info">Corona Virus Quiz</h2>
         </div>
     </div>
+    <!-- Result Section --> 
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p>Score: <span class = "text-success display-4 p-3">0%</span></p>
+        </div>
+    </div>
+
 
     <!-- Quiz Section -->
     <div class = " quiz py-4 bg-info">
@@ -28,7 +40,7 @@
                         <label  class="form-check-label">A microscopic, single-celled organism</label>
                     </div>
                     <div class = "form-check my-2 text-white-50">
-                        <input type = "radio" name = "ques1" value = "B" >
+                        <input type = "radio" name = "ques1" value = "B">
                         <label  class="form-check-label">A sub-microscopic infectious agent that replicates only inside the living cells of an organism</label>
                     </div>
                     <div class = "form-check my-2 text-white-50">
@@ -249,6 +261,12 @@
                     <input type = "submit" class = "btn btn-light">
                 </div>
             </form>
+        </div>
+    </div>
+
+    <div class = "foot py-3 bg-white text-center">
+        <div class = "container">
+            <h5 class = "my-4 text-info">Author: @nvkex</h2>
         </div>
     </div>
     <script src= "app.js"></script>
